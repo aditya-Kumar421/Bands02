@@ -78,7 +78,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": 'sample',
-        'HOST': '127.0.0.1',
+        'HOST': 'https://band-bts.onrender.com',
         'PORT': '3306',
         'USER': 'root',
         'PASSWORD':'kalker@107',
