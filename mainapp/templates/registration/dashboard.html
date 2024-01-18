@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!--meta-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--title-->
+    <title>The BTS | Celebrating 14 Years of Great Music</title>
+    
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    
+    <!--custom CSS-->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+body {
+
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+}
+
+a {
+
+    color: white;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+}
+
+a:hover {
+
+    color: white;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.callout-container {
+    height: 100vh;
+    background-image: url('https://www.iwmbuzz.com/wp-content/uploads/2020/11/top-moments-of-bts-from-live-concerts.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+}
+
+.gigs-container {
+    background-image: url("https://wallpapers.com/images/hd/bts-concert-2048-x-996-picture-tfd3xhce25af1gmq.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gig-opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-container {
+    background-image: url("https://karnatakastateopenuniversity.in/wp-content/uploads/2022/06/BTS-world-tour-2022.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.social-container {
+    background-color: white;
+}
+
+.img-logo {
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    border: 0;
+}
+
+.navbar-default .navbar-collapse {
+
+    border-color: black;
+    width: 100%;
+}
+.navbar-default .navbar-toggle:hover .navbar-default .navbar-toggle:visited .navbar-default .navbar-toggle:active .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    padding-top: 18px;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+.lead.music-service {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.lead.music-service:hover {
+    color: white;
+    text-decoration: underline;
+}
+.lead.music-text {
+    font-style: italic;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    margin: 25px 0;
+}
+
+.block-divider {
+    width: 35px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--black {
+    background-color: black;
+}
+
+.page-header .white-title {
+    color: white;
+}
+
+/* basic font settings */
+
+.social-title {
+    color: black;
+    font-weight: 300;
+}
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+.page-header h2 {
+    margin-top: 0;
+}
+.band .page-header {
+    margin-bottom: 25px;
+}
+.gigs .page-header {
+    margin-bottom: 25px;
+}
+.music .page-header {
+    margin-bottom: 25px;
+}
+.video .page-header {
+    margin-bottom: 25px;
+}
+.section-text p {
+    text-align: center;
+}
+
+blockquote {
+    border-left: 0;
+}
+
+.media-body {
+    padding-bottom: 25px;
+}
+.media-body p {
+    font-size: 14px;
+}
+
+.gigs-text {
+    color: white;
+}
+
+body table {
+    color: white;
+}
+.dead-link {
+    color: white;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.label {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    
+    
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    background-color: #31b0d5;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+p .section-text {
+    text-align: center;
+    width: 30em;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+.gallery-img {
+    display: block;
+    max-width: 100%;
+    height: 400px !important;
+
+
+}
+
+/* colors text white */
+
+#gallery-text {
+    color: white;
+}
+#video-text {
+    color: white;
+}
+
+video {
+    height: auto !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+.lead.social-text {
+    /* font-family: "Kalligraphia", sans-serif; */
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+}
+.social-list {
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* displays list horizontally instead of vertically */
+
+.social-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* colors font awesome social icons black */
+
+.fa {
+    color: black;
+}
+
+/* styles newsletter subscription */
+
+#signup.contact-form {
+    display: block;
+    font-size: 14px;
+    margin-top: 0em;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    padding-top: 25px;
+}
+
+/* styles back to top link */
+
+#back {
+    color: black;
+    text-decoration: underline;
+}
+
+input .email-box {
+    border-color: black;
+}
+@media (min-width: 768px) {
+    .callout-container {
+        height: 100vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .img-responsive {
+        padding-top: 90px;
+
+
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        position: absolute;
+        
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    
+    .navbar-nav>li {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navbar-default .navbar-nav>li>a {
+        transition: text-decoration 0.5s ease-in-out;
+        font-size: 35px;
+        /* font-family: "Kalligraphia", sans-serif; */
+        color: white;
+    }
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:active {
+        text-decoration: underline;
+    }
+    .lead.music-text {
+        font-style: italic;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        color: white;
+        margin: 25px 0;
+    }
+    video {
+        width: 60%;
+
+    }
+}
+</style>
+
+     <!-- Email -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+ 
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "cloudcomputingcell2@gmail.com",
+                Password: "qojn iuaa lrqb zdtm",
+                To: 'aadikumar496@gmail.com',
+                From: "cloudcomputingcell2@gmail.com",
+                Subject: "Ticket booked successfully!",
+                Body: "Your Ticket is booked on given date. Please come and enjoy our show.",
+            })
+                .then(function (message) {
+                    disableButton(this)
+                });
+        }
+    </script>
+</head>
+
+<body id="top">
+    <nav class="navbar navbar-default navbar-static-top">
+        <!--navbar-->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-nav" class="navbar-brand visible-xs active"><a href="index.html">The BTS</a></div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#gigs">Tickets</a></li>
+                    <li><a href="{% url 'login' %}">Logout</a></li>
+                    <li><a href="{% url 'password_reset' %}">Change Pass</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
+        <!-- Callout -->
+        <div class="row">
+            <div class="col-xs-12">
+                <section class="callout jumbotron text-center">
+                    <br><br>
+                    <br><br>
+                    <h2 class="lead music-text">The BTS: Lodestar </h2>
+                    <hr class="block-divider block-divider--white">
+                    <p class="lead music-text">Available January 12th</p> <br>
+                </section>
+            </div>
+        </div>
+        <!-- /.callout -->
+    </div>
+    <div class="container-wrapper">
+        <div class="container band-container content-container">
+            <!-- Band -->
+            <section id="band">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 class="text-title">Band</h2>
+                            <hr class="block-divider block-divider--black">
+                            <p class=" text-muted">About BTS band</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="section-text">BTS also known as the Bangtan Boys, is a seven-member South Korean boy band formed by Big Hit Entertainment.
+                            The name subsequently became a backronym for Beyond the Scene in July 2017. On June 12, 2013, they performed the
+                            song "No More Dream" from their initial album 2 Cool 4 Skool to commemorate their debut on June 13, 2013. They
+                            won several New Artist of the Year awards for the track "No More Dream", including at the 2013 Melon Music
+                            Awards and Golden Disc Awards and the 2014 Seoul Music Awards. </p>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media band-member">
+                            <div class="media-left">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiKZ2PvYONASPCWuxxYHK53yt8wGcgjwnWaEajIWeWJUSM2tZB6zM6ekzj-9lJqQe3_oM&usqp=CAU" alt="Davy Jones" class="img-circle media-object" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>Jin has performed three solo songs: "Awake", "Epiphany", and "Moon". "Awake",which heco-produced,in 2016, as part of BTS</p>
+                                    <footer>Jin - <cite title="Twitter">Vocals</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media band-member ">
+                            <div class="media-left">
+                                <img src="https://wallpapercave.com/wp/wp8956352.png" alt="Peter Tork" class="img-circle media-object" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>He debuted as a member of the South Korean boy band BTS in 2013. His first solo mixtape, Agust D, was released in 2016</p>
+                                    <footer>Suga - <cite title="Twitter">Lead Rapper</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media band-member">
+                            <div class="media-left ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdXD4fcSJDRzt8h-JdYVC8HIW4osBKzgV8m4KjCgQ6DvDxtfjZJ3q5yBxcPF3hZSsdJBI&usqp=CAU" alt="Michael Nesmith" class="img-circle media-object" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>He made his debut as a member of South Korean boy band BTS in 2013, under Big Hit Entertainment.</p>
+                                    <footer>J-Hope - <cite title="Twitter">Rapper</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media band-member">
+                            <div class="media-left">
+                                <img src=" https://wallpapercave.com/wp/wp2687278.jpg" alt="Mickey Dolenz" class="img-circle media-object" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>Kim Nam-joon (Korean: 김남준; born September 12, 1994), known professionally as RM (formerly Rap Monster), is a South Korean rapper, songwriter.</p>
+                                    <footer>Rap Monster - <cite title="Twitter">Main Rapper</cite></footer>
+                                </blockquote>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media band-member">
+                            <div class="media-left ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_PLjVQMPvp6V2fMRih5H5Z6WdFaF1rKOq2Q&usqp=CAU" alt="Michael Nesmith" class="img-circle media-object" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>he made his debut as a member of the South Korean boy band BTS, under the record label Big Hit Entertainment.</p>
+                                    <footer>Jimin - <cite title="Twitter">Main Dancer</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media band-member">
+                            <div class="media-left">
+                                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM5a2BlpmlN5A1gdg5zuAJ5SG1j6goABdTug&usqp=CAU" alt="Mickey Dolenz" class="img-circle media-object" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="quote">
+                                    <p>Kim Tae-hyung (Korean: 김태형; born December 30, 1995), known professionally as V (뷔), is a South Korean singer and a member of the boy band BTS.</p>
+                                    <footer>V - <cite title="Twitter">Vocals</cite></footer>
+                                </blockquote>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="media band-member">
+                        <div class="media-left">
+                            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgKoEZxWt54k_XBoJEJBBc3rf66CgdqWzNzQ&usqp=CAU" alt="Mickey Dolenz" class="img-circle media-object" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="quote">
+                                <p>He rose to prominence as a member and vocalist of the South Korean boy band BTS. He has performed three solo songs as part of BTS' discography— "Begin" in 2016</p>
+                                <footer>Jungkook - <cite title="Twitter">Main Vocals</cite></footer>
+                            </blockquote>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- /.band -->
+    </div>
+    <div class="container-wrapper gallery-container">
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="container-fluid content-container">
+            <section id="gallery">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 class="text-title white-title">Gallery</h2>
+                            <hr class="block-divider block-divider--white">
+                            <p id="gallery-text" class=" text-muted"> See our gallery</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="center-block gallery-img" src="https://assets.teenvogue.com/photos/62977613573a93d41b9d4364/16:9/w_2560%2Cc_limit/BTS%2520&%2520POTUS_(Credit_the%2520White%2520House).JPG" alt="The Monkees">
+                            <div class="carousel-caption">
+                                <h3>More Greatest Hits of The BTS</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="center-block gallery-img" src="https://wallpapers.com/images/hd/bts-concert-1367-x-900-picture-1tun2iuvg2s7rn7h.jpg" alt="album cover">
+                            <div class="carousel-caption">
+                                <h3>The Very Best of The BTS</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="center-block gallery-img" src="https://i.ibb.co/ky1CY79/bts-band03.jpg" alt="New York">
+                            <div class="carousel-caption">
+                                <h3>The BTS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container-wrapper music-container">
+        <div class="container-fluid  content-container">
+            <!-- Music -->
+            <section id="music">
+                <div class="row">
+                    <br>
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h2 class="text-title">Music</h2>
+                            <hr class="block-divider block-divider--black">
+                            <p class=" text-muted"> A selection of our most popular songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row audio-section">
+                    <div class="col-xs-12 col-md-6 col-md-offset-3 ">
+                        <div class="media">
+                            <div class="audio-player text-center">
+                                <h4 class=" song-title text-center"> Last Train To Clarkesville</h4>
+                                <br>
+                                <audio class="song text-centerer" controls>
+                                    <source src="Clarksville.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <p class="section-text"> "Last Train to Clarksville" was the debut single by The BTS. It was released August 16, 2016 and later included on the group's 2016 self-titled album, which was released on October 10, 2016 </p>
+                        <br>
+                        <hr class="block-divider block-divider--black">
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="media">
+                            <div class=" audio-player text-center">
+                                <h4 class=" song-title text-center"> Daydream Believer</h4>
+                                <br>
+                                <audio class="song" controls>
+                                    <source src="DaydreamBeliever.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <p class="section-text"> "Daydream Believer" was originally recorded by The BTS, with Jungkook singing lead vocals. The single hit the number one spot on the South Korea Billboard Hot 100 chart in December 2017, remaining there for four weeks, and peaked at number five in the UK Singles Chart.</p>
+                        <br>
+                        <hr class="block-divider block-divider--black">
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="media">
+                            <div class="audio-player text-center">
+                                <h4 class="song-title text-center"> (I'm Not Your) Stepping Stone</h4>
+                                <br>
+                                <audio class="song" controls>
+                                    <source src="SteppingStone.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <p class="section-text"> "(I'm Not Your) Stepping Stone" is best known as a hit for The BTS (South Korea #20), released in November 2017, (making it the first BTS B-side to chart). Musicians featured on the BTS recording are: Micky Dolenz (lead vocal);Tommy Boyce (backing vocal); Wayne Erwin, Gerry McGee, and Louie Shelton (guitar); Bobby Hart (organ); Larry Taylor (bass); Billy Lewis (drums); and Henry Lewy (percussion).</p>
+                        <br>
+                        <hr class="block-divider block-divider--black">
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="media">
+                            <div class="audio-player text-center">
+                                <h4 class="song-title text-center"> I'm a Believer</h4>
+                                <br>
+                                <audio class="song" controls>
+                                    <source src="ImABeliever.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <p class="section-text"> "I'm a Believer" is a song composed by Jungkook and recorded by The BTS in 2018 with the lead vocals by V. The single, produced by Jeff Barry, hit the number one spot on the South Korean Billboard Hot 100 chart for the week ending December 31, 2018 and remained there for seven weeks, becoming the last No. 1 hit of 2018 and the biggest-selling record for all of 2019. Billboard ranked the record as the No. 5 song for 2019. Because of 1,051,280
+                            advance orders, it went gold within two days of release. It is one of the fewer than forty all-time singles to have sold 10 million (or more) copies worldwide.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- /.music -->
+            </div>
+        </div>
+        <div class="container-wrapper gigs-container">
+            <div class="gig-opaque-overlay">&nbsp;</div>
+            <div class="container-fluid  content-container ">
+                <!-- Gigs -->
+                <section id="gigs">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-header">
+                                <h2 class="text-title white-title">Ticket</h2>
+                                <hr class="block-divider block-divider--white">
+                                <p class=" gigs-text text-muted">See us live in action! </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gigs-section">
+                        <div class="col-xs-12 col-md-12 ">
+                            <div class="media">
+                                <div class="gigs-table text-center">
+                                    <table class="table gigs-table ">
+                                        <thead>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr class=" visible-sm visible-md visible-lg">
+                                                <td class="soldout">12/01/24</td>
+                                                <td class="soldout">Brooklyn, New York</td>
+                                                <td class="soldout"> Beacon Theatre</td>
+                                                <td class="dead-link soldout">
+                                                    <h4><span class="label label-danger">Sold Out! </span></h4>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>24/01/24</td>
+                                                <td>Los Angeles, California</td>
+                                                <td>The Roxy</td>
+                                                <td><a href="#">Buy Tickets</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>28/01/24</td>
+                                                <td>Tokyo, Japan</td>
+                                                <td>House of Blues</td>
+                                                <td><a href="#"> Buy Tickets</a></td>
+    
+                                            </tr>
+                                            <tr>
+                                                <td>01/02/24</td>
+                                                <td>Toronto, Canada</td>
+                                                <td>Massey Hall</td>
+                                                <td><a href="#"> Buy Tickets</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                </div>
+                                <div class="booking-container text-center">
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /.gigs -->
+            </div>
+        </div>
+        <div class="container-wrapper social-container">
+            <footer>
+                <div class="container-fluid content-container ">
+                    <!-- Social -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-header">
+                                <h2 class="text-title social-title">Follow The BTS</h2>
+                            <hr class="block-divider block-divider--black">
+                            <br>
+                        </div>
+                        <ul class="social-list list-inline">
+                            <li>
+                                <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/bts_bighit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@BTS" target="_blank"><i class="fa fa-youtube"></i></a>
+                            </li>
+
+                        </ul>
+                        <br>
+                        <form class="contact-form" id="signup" method="get">
+                            <input class="email-box" name="email" placeholder="Enter email to get updates" required type="email">
+                            <input class="btn--cta " id="submit-button" type="submit" value="Subscribe">
+                        </form>
+                        <br>
+                        <br>
+                        <p class="text-muted text-center">Created By Aditya Kumar </p>
+                        
+                        <p class="text-center"><a id="back" href="#top">Back to top</a></p>
+                    </div>
+                </div>
+                <!-- /.social -->
+            </div>
+        </footer>
+    </div>
+    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!-- Modal -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Book The BTS!</h4>
+                </div>
+                <div class="modal-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="event">Event Type*</label>
+                            <select class="form-control" id="event" required>
+                                        <option disabled value="" selected hidden>Location</option>
+                                        <option>New York</option>
+                                        <option>Callifornia</option>
+                                        <option>Tokya</option>
+                                        <option>Washington</option>
+                                        <option>London</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date*</label>
+                            <input type="date" class="form-control" id="date" required>
+                            <p class="help-block">* Required</p>
+                        </div>
+                        <div class="text-center">
+                            <input class="btn btn-success" type="submit" name="btnADD" id="btnADD"  value="Send Email" onclick="sendEmail()"/>
+                        </div> <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById('gallery').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById('gallery').style.display = "none";
+        }
+ 
+        function disableButton(button) {
+            button.disabled = true;
+            button.value = "Booking Sent"
+            alert("Booking Sent");
+            alert("mail sent successfully");
+            button.form.submit();
+        }
+    </script>
+</body>
+
+</html>

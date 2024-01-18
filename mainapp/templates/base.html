@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <link href="{% static 'css\base.css' %}" rel="stylesheet">
+        <link href="{% static 'css\bts-index.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            {%if request.user.is_authenticated %}
+            <ul class="menu">
+                <li {% if section == "dashboard" %} class="selected" {% endif %}><a href="{% url 'dashboard' %}"></a></li>
+           </div>
+           {% endif %} 
+           <div id="content">
+            {% block content %} 
+
+            
+            {% endblock %}
+            </div>
+    </body>
+</html>
